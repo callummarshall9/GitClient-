@@ -1,0 +1,15 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:MaxWidth="200" d:MaxHeight="100"
+        x:Class="GitClient.Views.LoginWindow"
+        Title="Login Window">
+	<StackPanel>
+		<TextBlock Text="Email"></TextBlock>
+		<TextBox Name="emailTextBox"></TextBox>
+		<TextBlock Text="Password"></TextBlock>
+		<TextBox Name="passwordTextBox"></TextBox>
+		<Button Content="Login" Command="{Binding $parent[Window].DataContext.Login}"></Button>
+	</StackPanel>
+</Window>
